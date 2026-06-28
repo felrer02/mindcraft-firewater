@@ -1,0 +1,8 @@
+{
+    "name": "Ember",
+    "model": "gemini-flash-latest",
+    "prompt_files": {
+        "conversing": "./prompts/ember.conversing.md",
+        "coding": "./prompts/ember.coding.md"
+    }
+}
