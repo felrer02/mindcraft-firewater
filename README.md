@@ -22,7 +22,7 @@ Do not connect this bot to public servers with coding enabled. This project allo
 
 - [Minecraft Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc) (up to v1.21.11, recommend v1.21.6)
 - [Node.js Installed](https://nodejs.org/) (Node v18 or v20 LTS recommended. Node v24+ may cause issues with native dependencies)
-- At least one API key from a supported API provider. See [supported APIs](#model-customization). OpenAI is the default.
+- At least one API credential from a supported API provider. See [supported APIs](#model-customization). OpenAI is the default.
 
 > [!Important]
 > If installing node on windows, ensure you check `Automatically install the necessary tools`
@@ -35,7 +35,7 @@ Do not connect this bot to public servers with coding enabled. This project allo
 
 2. Download the [latest release](https://github.com/mindcraft-bots/mindcraft/releases/latest) and unzip it, or clone the repository.
 
-3. Rename `keys.example.json` to `keys.json` and fill in your API keys (you only need one). The desired model is set in `andy.json` or other profiles. For other models refer to the table below.
+3. Rename `keys.example.json` to `keys.json` and fill in your API credentials (you only need one). The desired model is set in `andy.json` or other profiles. For other models refer to the table below.
 
 4. In terminal/command prompt, run `npm install` from the installed directory
 
@@ -51,14 +51,15 @@ If you encounter issues, check the [FAQ](https://github.com/mindcraft-bots/mindc
 
 You can configure project details in `settings.js`. [See file.](settings.js)
 
-You can configure the agent's name, model, and prompts in their profile like `andy.json`. The model can be specified with the `model` field, with values like `model: "gemini-2.5-pro"`. You will need the correct API key for the API provider you choose. See all supported APIs below.
+You can configure the agent's name, model, and prompts in their profile like `andy.json`. The model can be specified with the `model` field, with values like `model: "gemini-2.5-pro"`. You will need the correct API credential for the API provider you choose. See all supported APIs below.
 
 <details>
 <summary><strong>⭐ VIEW SUPPORTED APIs ⭐</strong></summary>
 
 | API Name | Config Variable| Docs |
 |------|------|------|
-| `openai` | `OPENAI_API_KEY` | [docs](https://platform.openai.com/docs/models) |
+| `openai` | `OPENAI_ACCESS_TOKEN` or `OPENAI_API_KEY` | [docs](https://platform.openai.com/docs/models) |
+| `openai-codex` | `CODEX_ACCESS_TOKEN` or Codex CLI login | [docs](https://developers.openai.com/codex/auth) |
 | `google` | `GEMINI_API_KEY` | [docs](https://ai.google.dev/gemini-api/docs/models/gemini) |
 | `anthropic` | `ANTHROPIC_API_KEY` | [docs](https://docs.anthropic.com/claude/docs/models-overview) |
 | `xai` | `XAI_API_KEY` | [docs](https://docs.x.ai/docs) |
@@ -78,6 +79,18 @@ You can configure the agent's name, model, and prompts in their profile like `an
 | `mercury` | `MERCURY_API_KEY` | [docs](https://www.inceptionlabs.ai/) |
 
 </details>
+
+For OpenAI, `OPENAI_ACCESS_TOKEN` is checked first so OAuth/workload-issued bearer tokens can be used without changing the OpenAI provider. If it is not set, Mindcraft falls back to the standard `OPENAI_API_KEY` flow. `OPENAI_ORG_ID` is still optional and applies to either credential.
+
+For Codex subscription access, use the separate `openai-codex` provider. Install and authenticate the official Codex CLI, then set a profile model like `"openai-codex/gpt-5.5"`:
+
+```bash
+npm install -g @openai/codex
+node scripts/codex-login.js
+node main.js
+```
+
+`openai-codex` uses Codex/ChatGPT OAuth credentials and the Codex backend, not the standard OpenAI API billing path. You can also set `CODEX_ACCESS_TOKEN`, `CODEX_AUTH_FILE`, or `CODEX_BASE_URL` in `keys.json` or the environment.
 
 For more comprehensive model configuration and syntax, see [Model Specifications](#model-specifications).
 

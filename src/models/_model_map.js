@@ -42,7 +42,9 @@ export function selectAPI(profile) {
         }
     }
     if (!profile.api) {
-        const api = Object.keys(apiMap).find(key => profile.model?.startsWith(key));
+        const api = Object.keys(apiMap)
+            .sort((a, b) => b.length - a.length)
+            .find(key => profile.model?.startsWith(key));
         if (api) {
             profile.api = api;
         }
@@ -76,7 +78,7 @@ export function selectAPI(profile) {
 }
 
 export function createModel(profile) {
-    if (!!apiMap[profile.model]) {
+    if (apiMap[profile.model]) {
         // if the model value is an api (instead of a specific model name)
         // then set model to null so it uses the default model for that api
         profile.model = null;

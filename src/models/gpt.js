@@ -1,5 +1,6 @@
 import OpenAIApi from 'openai';
-import { getKey, hasKey } from '../utils/keys.js';
+import { Buffer } from 'buffer';
+import { createOpenAIConfig } from '../utils/openai_credentials.js';
 import { strictFormat } from '../utils/text.js';
 
 export class GPT {
@@ -9,16 +10,7 @@ export class GPT {
         this.params = params;
         this.url = url; // store so that we know whether a custom URL has been set
 
-        let config = {};
-        if (url)
-            config.baseURL = url;
-
-        if (hasKey('OPENAI_ORG_ID'))
-            config.organization = getKey('OPENAI_ORG_ID');
-
-        config.apiKey = getKey('OPENAI_API_KEY');
-
-        this.openai = new OpenAIApi(config);
+        this.openai = new OpenAIApi(createOpenAIConfig(url));
     }
 
     async sendRequest(turns, systemMessage, stop_seq='***') {
@@ -87,7 +79,7 @@ export class GPT {
         return res;
     }
 
-    async sendVisionRequest(messages, systemMessage, imageBuffer) {
+    sendVisionRequest(messages, systemMessage, imageBuffer) {
         const imageMessages = [...messages];
         imageMessages.push({
             role: "user",
@@ -121,27 +113,17 @@ const sendAudioRequest = async (text, model, voice, url) => {
         model: model,
         voice: voice,
         input: text
-    }
+    };
 
-    let config = {};
-
-    if (url)
-        config.baseURL = url;
-
-    if (hasKey('OPENAI_ORG_ID'))
-        config.organization = getKey('OPENAI_ORG_ID');
-
-    config.apiKey = getKey('OPENAI_API_KEY');
-
-    const openai = new OpenAIApi(config);
+    const openai = new OpenAIApi(createOpenAIConfig(url));
 
     const mp3 = await openai.audio.speech.create(payload);
     const buffer = Buffer.from(await mp3.arrayBuffer());
     const base64 = buffer.toString("base64");
     return base64;
-}
+};
 
 export const TTSConfig = {
     sendAudioRequest: sendAudioRequest,
     baseUrl: 'https://api.openai.com/v1',
-}
+};

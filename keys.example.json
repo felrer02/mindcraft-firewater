@@ -1,4 +1,8 @@
 {
+    "CODEX_ACCESS_TOKEN": "",
+    "CODEX_AUTH_FILE": "",
+    "CODEX_BASE_URL": "",
+    "OPENAI_ACCESS_TOKEN": "",
     "OPENAI_API_KEY": "",
     "OPENAI_ORG_ID": "",
     "GEMINI_API_KEY": "",
