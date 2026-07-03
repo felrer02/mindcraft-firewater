@@ -145,6 +145,7 @@ export class OpenAICodex {
             instructions: systemMessage,
             input: messages,
             stream: true,
+            store: false,
         };
 
         if (this.params.reasoning)
