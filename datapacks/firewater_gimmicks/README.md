@@ -14,11 +14,13 @@ Setup:
 1. Run `/reload`.
 2. Place `red_glazed_terracotta` as the trigger pad.
 3. Place `red_stained_glass` as the glass device.
-4. Look directly at each red stained glass block and run:
+4. Look directly at one block in a connected red stained glass cluster and run:
 
 ```mcfunction
 /function fwg:builder/register_red_glass
 ```
+
+Registration scans up to 256 face-connected `red_stained_glass` blocks.
 
 Useful commands:
 
@@ -26,5 +28,7 @@ Useful commands:
 /function fwg:builder/help
 /function fwg:red/reset
 /function fwg:builder/clear_red_glass_nearby
+/function fwg:builder/clear_all_red_glass_markers
 ```
 
+`clear_all_red_glass_markers` also removes red stained glass blocks at registered marker positions.
