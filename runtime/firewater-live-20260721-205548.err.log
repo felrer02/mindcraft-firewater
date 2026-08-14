@@ -1,0 +1,37 @@
+Error getting server: TypeError: Cannot read properties of null (reading 'version')
+    at ping (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:26:26)
+    at Object.cbPing [as ping] (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:10:23)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:21:12
+    at new Promise (<anonymous>)
+    at serverInfo (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:13:12)
+    at getServer (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:130:24)
+    at Module.createAgent (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mindcraft.js:48:34)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/main.js:98:15
+Attempting to connect anyway...
+Error getting server: TypeError: Cannot read properties of null (reading 'version')
+    at ping (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:26:26)
+    at Object.cbPing [as ping] (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:10:23)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:21:12
+    at new Promise (<anonymous>)
+    at serverInfo (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:13:12)
+    at getServer (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:130:24)
+    at Module.createAgent (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mindcraft.js:48:34)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/main.js:98:15
+Attempting to connect anyway...
+Timeout pinging server 127.0.0.1:55916
+Timeout pinging server 127.0.0.1:55916
+Codex OAuth endpoint rejected image input; retrying through the standard OpenAI Responses API.
+Codex OAuth endpoint rejected image input; retrying through the standard OpenAI Responses API.
+Error with embedding model, using word-overlap instead.
+Error with embedding model, using word-overlap instead.
+Error with embedding model, using word-overlap instead.
+Error with embedding model, using word-overlap instead.
+Error with embedding model, using word-overlap instead.
+Error with embedding model, using word-overlap instead.
+THREE.WebGLRenderer: Texture is not power of two. Texture.minFilter should be set to THREE.NearestFilter or THREE.LinearFilter.
+THREE.WebGLRenderer: Texture is not power of two. Texture.minFilter should be set to THREE.NearestFilter or THREE.LinearFilter.
+THREE.WebGLRenderer: Texture is not power of two. Texture.minFilter should be set to THREE.NearestFilter or THREE.LinearFilter.
+THREE.WebGLRenderer: Texture is not power of two. Texture.minFilter should be set to THREE.NearestFilter or THREE.LinearFilter.
+no response
+no response
+no response

@@ -1,0 +1,3 @@
+42540
+C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\runtime\firewater-live-20260721-204744.out.log
+C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\runtime\firewater-live-20260721-204744.err.log

@@ -1,0 +1,413 @@
+MindServer running on port 8081 on host localhost
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Connecting to MindServer
+Connecting to MindServer
+TAP version 13
+TAP version 13
+# Subtest: vision body uses Responses input_image content with original detail for every image
+# Subtest: vision body uses Responses input_image content with original detail for every image
+ok 1 - vision body uses Responses input_image content with original detail for every image
+  ---
+  duration_ms: 70.0631
+  type: 'test'
+  ...
+ok 1 - vision body uses Responses input_image content with original detail for every image
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+  ---
+  duration_ms: 46.2678
+  type: 'test'
+  ...
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+  ---
+  duration_ms: 30.0599
+  type: 'test'
+  ...
+  ---
+  duration_ms: 9.2764
+  type: 'test'
+  ...
+# Subtest: image modality rejection detection is explicit
+ok 3 - image modality rejection detection is explicit
+  ---
+  duration_ms: 2.4388
+  type: 'test'
+  ...
+# Subtest: Codex vision request sends the expected private Responses payload
+ok 4 - Codex vision request sends the expected private Responses payload
+# Subtest: image modality rejection detection is explicit
+  ---
+  duration_ms: 12.2979
+  type: 'test'
+  ...
+ok 3 - image modality rejection detection is explicit
+  ---
+  duration_ms: 1.3167
+  type: 'test'
+  ...
+# Subtest: explicit private image rejection falls back once to standard Responses API
+# Subtest: Codex vision request sends the expected private Responses payload
+ok 4 - Codex vision request sends the expected private Responses payload
+ok 5 - explicit private image rejection falls back once to standard Responses API
+  ---
+  duration_ms: 9.2188
+  type: 'test'
+  ...
+  ---
+  duration_ms: 39.8341
+  type: 'test'
+  ...
+# Subtest: explicit private image rejection falls back once to standard Responses API
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+  ---
+  duration_ms: 23.4974
+  type: 'test'
+  ...
+ok 5 - explicit private image rejection falls back once to standard Responses API
+  ---
+  duration_ms: 50.9533
+  type: 'test'
+  ...
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+  ---
+  duration_ms: 26.5168
+  type: 'test'
+  ...
+Client connected
+Client connected
+Wade connected to MindServer
+Ember connected to MindServer
+Starting agent
+Starting agent
+Initializing agent Ember...
+Initializing agent Wade...
+Examples initialized.
+No task.
+Ember logging into minecraft...
+Examples initialized.
+No task.
+Wade logging into minecraft...
+Agent process exited with code 1 and signal null
+Restarting agent...
+Agent process exited with code 1 and signal null
+Restarting agent...
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Connecting to MindServer
+Connecting to MindServer
+TAP version 13
+# Subtest: vision body uses Responses input_image content with original detail for every image
+TAP version 13
+ok 1 - vision body uses Responses input_image content with original detail for every image
+# Subtest: vision body uses Responses input_image content with original detail for every image
+  ---
+  duration_ms: 5.3336
+  type: 'test'
+  ...
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 1 - vision body uses Responses input_image content with original detail for every image
+  ---
+  duration_ms: 5.7177
+  type: 'test'
+  ...
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+  ---
+  duration_ms: 11.828
+  type: 'test'
+  ...
+# Subtest: image modality rejection detection is explicit
+ok 3 - image modality rejection detection is explicit
+  ---
+  duration_ms: 2.6963
+  type: 'test'
+  ...
+# Subtest: Codex vision request sends the expected private Responses payload
+ok 4 - Codex vision request sends the expected private Responses payload
+  ---
+  duration_ms: 13.5947
+  type: 'test'
+  ...
+# Subtest: explicit private image rejection falls back once to standard Responses API
+ok 5 - explicit private image rejection falls back once to standard Responses API
+  ---
+  duration_ms: 38.5665
+  type: 'test'
+  ...
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+  ---
+  duration_ms: 28.5803
+  type: 'test'
+  ...
+  ---
+  duration_ms: 26.4793
+  type: 'test'
+  ...
+# Subtest: image modality rejection detection is explicit
+ok 3 - image modality rejection detection is explicit
+  ---
+  duration_ms: 1.5056
+  type: 'test'
+  ...
+# Subtest: Codex vision request sends the expected private Responses payload
+ok 4 - Codex vision request sends the expected private Responses payload
+  ---
+  duration_ms: 30.0096
+  type: 'test'
+  ...
+# Subtest: explicit private image rejection falls back once to standard Responses API
+ok 5 - explicit private image rejection falls back once to standard Responses API
+  ---
+  duration_ms: 23.9247
+  type: 'test'
+  ...
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+  ---
+  duration_ms: 36.5583
+  type: 'test'
+  ...
+Client connected
+Client connected
+Wade connected to MindServer
+Ember connected to MindServer
+Starting agent
+Starting agent
+Initializing agent Wade...
+Initializing agent Ember...
+Examples initialized.
+Examples initialized.
+Loaded memory: Died at (-3.5,-54,8.5) overworld; respawned and successfully returned via last_death_position. Be more cautious underground/near hazards; “I’m dying!” appeared in behavior log.
+Loaded memory: 
+No task.
+No task.
+Ember logging into minecraft...
+Wade logging into minecraft...
+Agent process exited with code 1 and signal null
+Restarting agent...
+Agent process exited with code 1 and signal null
+Restarting agent...
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Connecting to MindServer
+Connecting to MindServer
+TAP version 13
+TAP version 13
+# Subtest: vision body uses Responses input_image content with original detail for every image
+# Subtest: vision body uses Responses input_image content with original detail for every image
+ok 1 - vision body uses Responses input_image content with original detail for every image
+ok 1 - vision body uses Responses input_image content with original detail for every image
+  ---
+  duration_ms: 4.9781
+  type: 'test'
+  ...
+  ---
+  duration_ms: 4.9778
+  type: 'test'
+  ...
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+  ---
+  duration_ms: 5.7047
+  type: 'test'
+  ...
+  ---
+  duration_ms: 5.8798
+  type: 'test'
+  ...
+# Subtest: image modality rejection detection is explicit
+# Subtest: image modality rejection detection is explicit
+ok 3 - image modality rejection detection is explicit
+ok 3 - image modality rejection detection is explicit
+  ---
+  duration_ms: 5.136
+  type: 'test'
+  ...
+  ---
+  duration_ms: 1.3232
+  type: 'test'
+  ...
+# Subtest: Codex vision request sends the expected private Responses payload
+# Subtest: Codex vision request sends the expected private Responses payload
+ok 4 - Codex vision request sends the expected private Responses payload
+ok 4 - Codex vision request sends the expected private Responses payload
+  ---
+  duration_ms: 11.1398
+  type: 'test'
+  ...
+  ---
+  duration_ms: 10.7593
+  type: 'test'
+  ...
+# Subtest: explicit private image rejection falls back once to standard Responses API
+# Subtest: explicit private image rejection falls back once to standard Responses API
+ok 5 - explicit private image rejection falls back once to standard Responses API
+ok 5 - explicit private image rejection falls back once to standard Responses API
+  ---
+  duration_ms: 28.6923
+  type: 'test'
+  ...
+  ---
+  duration_ms: 24.1184
+  type: 'test'
+  ...
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+  ---
+  duration_ms: 24.2024
+  type: 'test'
+  ...
+  ---
+  duration_ms: 25.4359
+  type: 'test'
+  ...
+Client connected
+Client connected
+Ember connected to MindServer
+Wade connected to MindServer
+Starting agent
+Starting agent
+Initializing agent Ember...
+Initializing agent Wade...
+Examples initialized.
+Examples initialized.
+Loaded memory: Died at (-3.5,-54,8.5) overworld; respawned and successfully returned via last_death_position. Be more cautious underground/near hazards; “I’m dying!” appeared in behavior log.
+Loaded memory: 
+No task.
+No task.
+Ember logging into minecraft...
+Wade logging into minecraft...
+Agent process exited with code 1 and signal null
+Restarting agent...
+Agent process exited with code 1 and signal null
+Restarting agent...
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Awaiting openai-codex vision response from model gpt-5.5
+Connecting to MindServer
+TAP version 13
+# Subtest: vision body uses Responses input_image content with original detail for every image
+Connecting to MindServer
+ok 1 - vision body uses Responses input_image content with original detail for every image
+  ---
+  duration_ms: 2.6447
+  type: 'test'
+  ...
+TAP version 13
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+# Subtest: vision body uses Responses input_image content with original detail for every image
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 1 - vision body uses Responses input_image content with original detail for every image
+  ---
+  duration_ms: 7.6856
+  type: 'test'
+  ...
+  ---
+  duration_ms: 4.5453
+  type: 'test'
+  ...
+# Subtest: image modality rejection detection is explicit
+# Subtest: SSE reader prefers deltas and does not duplicate terminal fallback text
+ok 3 - image modality rejection detection is explicit
+ok 2 - SSE reader prefers deltas and does not duplicate terminal fallback text
+  ---
+  duration_ms: 1.5455
+  type: 'test'
+  ...
+  ---
+  duration_ms: 5.3359
+  type: 'test'
+  ...
+# Subtest: Codex vision request sends the expected private Responses payload
+# Subtest: image modality rejection detection is explicit
+ok 4 - Codex vision request sends the expected private Responses payload
+ok 3 - image modality rejection detection is explicit
+  ---
+  duration_ms: 10.3601
+  type: 'test'
+  ...
+  ---
+  duration_ms: 1.0087
+  type: 'test'
+  ...
+# Subtest: explicit private image rejection falls back once to standard Responses API
+# Subtest: Codex vision request sends the expected private Responses payload
+ok 5 - explicit private image rejection falls back once to standard Responses API
+ok 4 - Codex vision request sends the expected private Responses payload
+  ---
+  duration_ms: 21.998
+  type: 'test'
+  ...
+  ---
+  duration_ms: 10.1309
+  type: 'test'
+  ...
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+# Subtest: explicit private image rejection falls back once to standard Responses API
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+ok 5 - explicit private image rejection falls back once to standard Responses API
+  ---
+  duration_ms: 19.1498
+  type: 'test'
+  ...
+  ---
+  duration_ms: 23.9651
+  type: 'test'
+  ...
+# Subtest: private non-modality errors never fall back and missing standard key is explicit
+ok 6 - private non-modality errors never fall back and missing standard key is explicit
+Client connected
+  ---
+  duration_ms: 13.5177
+  type: 'test'
+  ...
+Ember connected to MindServer
+Client connected
+Starting agent
+Wade connected to MindServer
+Initializing agent Ember...
+Starting agent
+Initializing agent Wade...
+Examples initialized.
+Loaded memory: Died at (-3.5,-54,8.5) overworld; respawned and successfully returned via last_death_position. Be more cautious underground/near hazards; “I’m dying!” appeared in behavior log.
+No task.
+Examples initialized.
+Ember logging into minecraft...
+Loaded memory: 
+No task.
+Wade logging into minecraft...
+Agent process exited with code 1 and signal null
+Agent process exited with code 1 and signal null

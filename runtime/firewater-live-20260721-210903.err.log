@@ -1,0 +1,40 @@
+Error getting server: TypeError: Cannot read properties of null (reading 'version')
+    at ping (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:26:26)
+    at Object.cbPing [as ping] (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:10:23)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:21:12
+    at new Promise (<anonymous>)
+    at serverInfo (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:13:12)
+    at getServer (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:130:24)
+    at Module.createAgent (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mindcraft.js:48:34)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/main.js:98:15
+Attempting to connect anyway...
+Error getting server: TypeError: Cannot read properties of null (reading 'version')
+    at ping (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:26:26)
+    at Object.cbPing [as ping] (C:\Users\felre\Desktop\ist-tech\mindcraft-firewater\node_modules\minecraft-protocol\src\ping.js:10:23)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:21:12
+    at new Promise (<anonymous>)
+    at serverInfo (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:13:12)
+    at getServer (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mcserver.js:130:24)
+    at Module.createAgent (file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/src/mindcraft/mindcraft.js:48:34)
+    at file:///C:/Users/felre/Desktop/ist-tech/mindcraft-firewater/main.js:98:15
+Attempting to connect anyway...
+node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use ::1:8081
+    at Server.setupListenHandle [as _listen2] (node:net:1941:16)
+    at listenInCluster (node:net:1998:12)
+    at GetAddrInfoReqWrap.callback (node:net:2207:7)
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:134:8)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1977:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::1',
+  port: 8081
+}
+
+Node.js v22.23.1
